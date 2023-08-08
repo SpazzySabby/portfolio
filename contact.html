@@ -53,18 +53,18 @@
             <div class="col-md-4">
                 <div class="container mt-3">
                     <h2>Contact Me!</h2>
-                    <form action="/action_page.php">
+                    <form action="/action_page.php" aria-labelledby="contact-section">
                         <div class="mb-3">
                             <label for="name">Name:</label>
-                            <input type="text" class="form-control" placeholder="Sabrina Spellman" name="name" id="name">
+                            <input type="text" class="form-control" placeholder="Sabrina Spellman" name="name" id="name" aria-label="Enter Full Name">
                         </div>
                         <div class="mb-3">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" placeholder="bewitchingdesigns@abc.123" name="email" id="email">
+                            <input type="email" class="form-control" placeholder="bewitchingdesigns@abc.123" name="email" id="email" aria-label="Enter Email Address">
                         </div>
                         <div class="mb-3">
                             <label for="comment">Messages:</label>
-                            <textarea class="form-control" id="comment" rows="5" name="text"></textarea>
+                            <textarea class="form-control" placeholder="Ideas? Questions? Concerns?" id="comment" rows="5" name="text" aria-label="Enter Message Subject"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
