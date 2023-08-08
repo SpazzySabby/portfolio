@@ -11,6 +11,7 @@
     <title>Sabrina's Portfolio</title>
 </head>
 <body>
+    <a id="top"></a>
     <!--Will use bootstrap to style the navigation and to set the size for the logo-->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-xxl">
@@ -42,7 +43,7 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-                <div class="col-sm-9 col-md-6 col-lg-8">
+                <div class="col-sm-9 col-md-6 col-lg-8 bg-warning">
                 <!--Will insert the carousel of websites I have made with bootstrap-->
                 <div id="demo" class="carousel slide" data-bs-ride="carousel">
                     <!--Indicators/Dots-->
@@ -77,7 +78,7 @@
                     </h2>
                 </div> 
             </div>
-            <div class="col-sm-3 col-md-6 col-lg-4">
+            <div class="col-sm-3 col-md-6 col-lg-4 bg-info">
                 <h1>Welcome to Bewitching Designs!
                     It is my goal to bring your design dreams to fruition!
                 </h1>
@@ -92,15 +93,15 @@
                 <h3>
                     Be one of the first to review us on yelp and win a free photography package!
                 </h3>
-                <img src="images/owner.png" alt="picture of owner">
-                <div class="owner">
+                <img src="images/owner.png" alt="picture of owner" itemscope itemtype="https://schema.org/Person">
+                <div class="owner" itemprop="Name">
                     Owner: Sabrina Oursin
                     <br>
                     <blockquote>
                         "I am still new to the design world, learning and absorbing everything. I promise to not stop growing, continually making both our businesses the best versions of themselves"
                     </blockquote>
                 </div>
-                <div class="location">
+                <div class="location" itemscope itemtype="https://schema.org/Place">
                         Located:
                         1377 Woodroffe Ave
                         Ottawa, ON
@@ -110,15 +111,12 @@
        
         </div>
         
-       
-    <footer>
+        <a href="#top" class="top">Return to Top</a>
+    <footer class="">
         <div class="footcon">
             Contact Us ~ bewitchingdesigns@gmail.com
             Phone ~ 613-282-6766
         </div>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
         &copy;Bewitching Designs
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
