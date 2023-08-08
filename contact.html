@@ -41,7 +41,7 @@
             </div>
         </nav>
     <!--Will use flex to balance the sections beside each other. I will then use bootstrap codes to make the page visually appealing-->
-    <div class="container-lg">
+    <div class="container-fluid">
         <div class="col-6">
             Located:
             1377 Woodroffe Ave
@@ -49,21 +49,28 @@
             K2X 1Z5
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.949099926143!2d-75.76375092327451!3d45.34983974106128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07b09f66746f%3A0x9a71cff3dddb03f7!2sAll%C3%B4%20mon%20Coco!5e0!3m2!1sen!2sca!4v1690818546702!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="col-6">
-        <form action="#">
-            <label for="fullname">Name</label>
-            <input type="text" name="fullname" placeholder="Sabrina Spellman"><br>
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="bewitchingdesigns@gmail.com"><br>
-            <label for="message">Message</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Questions? Thoughts! Let us Know!"></textarea><br>
-            <button type="submit">Send</button>
-        </form>
-        <div class="send">
-            Send me a message or drop by with your design ideas. Let's create together!
+        <div class="">
+            <div class="container mt-3">
+                <h2>Contact Me!</h2>
+                <form action="/action_page.php">
+                    <div class="mb-3">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" placeholder="Sabrina Spellman" name="name" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="bewitchingdesigns@abc.123" name="email" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment">Messages:</label>
+                        <textarea class="form-control" id="comment" rows="5" name="text"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+       
         </div>
     </div>
-</div>
    
    
    
